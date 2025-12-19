@@ -1,0 +1,58 @@
+body {
+    font-family : Arial, sans-serif;
+    background: rgb(255, 210, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 300px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    text-align: center;
+    color: purple;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 95%;
+    padding: 8px;
+    margin: 6px 0 12px;
+    border-radius: 6px;
+    border: 1px solid rgb(199, 15, 199);
+}
+
+button {
+    width: 100px;
+    padding: 5px;
+    font-size: 15px;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#hasil {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(96, 4, 96);
+    padding: 10px;
+    border-radius: 2px;
+}

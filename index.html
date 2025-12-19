@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggunaan Variabel & Operator Javascript</title>
+    <link rel="stylesheet" href="style fungsi.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Data Mahasiswa & Usia</h2>
+        <input type="text" id="nama" placeholder="Masukkan nama Anda">
+        <input type="text" id="nim" placeholder="Masukkan NIM Anda">
+        <input type="number" id="tahun" placeholder="Tahun lahir (misal: 2022)">
+        <button onclick="Data()">Tampilkan</button>
+        <div id="hasil"></div>
+    </div>
+    <script>
+        function Data() {
+            let nama = document.getElementById("nama").value;
+            let nim = document.getElementById("nim").value;
+            let tahun = Number(document.getElementById("tahun").value);
+            let usia = 2025 - tahun;
+            document.getElementById("hasil").innerHTML =
+                `<strong>
+                    Nama : ${nama}<br>
+                    NIM : ${nim}<br> 
+                    Usia : ${usia} tahun
+                </strong>`;
+        }
+    </script>
+</body>
+</html>
